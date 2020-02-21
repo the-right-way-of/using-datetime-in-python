@@ -16,7 +16,7 @@ datetime.datetime.now(datetime.timezone.utc) # Converts tz aware datetime in UTC
 
 dt = datetime.datetime.now()
 dt = dt.replace(tzinfo=datetime.timezone.utc) # Replace (not convert) the timezone of line 13 with UTC (mucks up the time)
+dt - datetime.datetime.now(datetime.timezone.utc) # Gives you the difference between UTC and Your time zone ;)
 
 dt - datetime.datetime.now() # Throws an error saying "TypeError: can't subtract offset-naive and offset-aware datetimes"
-dt - datetime.datetime.now(datetime.timezone.utc) # Gives you the difference between UTC and Your time zone ;)
 ```
